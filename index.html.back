@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sidewinder</title>
+<link rel="icon" type="image/png" href="./styles/imgs/logo.png">
+<link rel="stylesheet" href="./styles/css/bootstrap.min.css">
+
+<script type="text/javascript" src="./styles/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./styles/js/bootstrap.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101962299-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 5000
+    })
+  });
+</script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://sidewinder.srotya.com"> <img alt="logo"
+          src="./styles/imgs/logo.png" style="width: 20px; float: left">
+          <p style="float: left; margin-top: 2px;">&nbsp;Sidewinder</p>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class=""><a href=".">Overview</a></li>
+          <li class=""><a href="./download/">Download</a></li>
+          <li class=""><a href="./docs/">Docs</a></li>
+          <li class=""><a href="./integrations/">Integrations</a></li>
+          <li class=""><a href="./license/">License</a></li>
+          <li class=""><a href="./blog/">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container"
+		style="padding-top: 60px; margin: 0 auto; width: 80%" role="main">
+    <div id="my_carousel" class="carousel slide">
+
+      <ol class="carousel-indicators">
+        <li data-target = "#my_carousel" data-slide-to = "0" class="active"></li>
+        <li data-target = "#my_carousel" data-slide-to = "1"></li>
+        <li data-target = "#my_carousel" data-slide-to = "2"></li>
+      </ol>
+
+      <div class="carousel-inner i">
+
+        <div class="item active">
+          <img src="./content/slide1.png" alt = "i1" class="img-responsive">
+        </div>
+
+      </div>
+
+      <a class="carousel-control left" href="#my_carousel" data-slide = "prev">
+        <span class="icon-prev left"></span>
+      </a>
+
+      <a class="carousel-control right" href="#my_carousel" data-slide = "next">
+        <span class="icon-next right"></span>
+      </a>
+    </div>
+
+    <div style="padding-top:10px">
+      <center>
+        <button class="btn" onclick="window.location.href='./docs/gettingstarted/'">Getting Started</button>
+        <button class="btn" onclick="window.location.href='./download/'">Download</button>
+      </center>
+      <hr/>
+      <h3>Features</h3>
+      <div class="row" style="text-align:center;">
+        <div class="col-sm-4 padfeature">
+          <h4>Persistent</h4>
+          <img src="./styles/imgs/glyphicons-528-database.png" /><br/>
+          Memory mapped writes to disk<br/><br/><br/>
+        </div>
+        <div class="col-sm-4 padfeature">
+          <h4>Fast</h4>
+          <img src="./styles/imgs/glyphicons-422-send.png" /><br/>
+          Upto ~2 million writes per second per node<br/><br/><br/>
+        </div>
+        <div class="col-sm-4 padfeature">
+          <h4>Tools</h4>
+          <img src="./styles/imgs/glyphicons-42-charts.png" /><br/>
+          Official Grafana Data Source for visualizing<br/><br/><br/>
+        </div>
+        <div class="col-sm-4 padfeature">
+          <h4>Collectors</h4>
+          <img src="./styles/imgs/glyphicons-772-satellite-dish.png" /><br/>
+          Support for Collectd, Telegraf etc.<br/><br/><br/>
+        </div>
+        <div class="col-sm-4 padfeature">
+          <h4>REST</h4>
+          <img src="./styles/imgs/glyphicons-464-server.png" /><br/>
+          REST Api for programmatics data access<br/><br/><br/>
+        </div>
+        <div class="col-sm-4 padfeature">
+          <h4>Clustering</h4>
+          <img src="./styles/imgs/glyphicons-309-share-alt.png" /><br/>
+          Clustering for scaling and fault tolerance<br/><br/><br/>
+        </div>
+      </div>
+      <hr/>
+      <h3>News</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>Release 0.0.33</h4>
+          Compaction fixes
+          <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.33">more...</a>
+        </div>
+        <div class="col-sm-4">
+          <h4>Release 0.0.31</h4>
+          New functions and improvements
+          <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.31">more...</a>
+        </div>
+        <div class="col-sm-4">
+          <h4>Release 0.0.29</h4>
+          GC, Compaction and Replication
+          <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.29">more...</a>
+        </div>
+      </div>
+    </div>
+    <br/><br/><br/><br/>
+      <center>
+        <div style="font-size:8pt; color:#d4d7db">
+          Copyright 2016-2017 Ambud Sharma
+        </div>
+        <div style="font-size:6pt; color:#d4d7db">
+          Grafana Logo Copyright 2014-2016 Torkel Ödegaard, Raintank Inc.<br/>
+        </div>
+      </center>
+  </div>
+
+
+</body>
+</html>

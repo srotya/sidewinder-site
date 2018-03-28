@@ -1,158 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Sidewinder</title>
-<link rel="icon" type="image/png" href="./styles/imgs/logo.png">
-<link rel="stylesheet" href="./styles/css/bootstrap.min.css">
 
-<script type="text/javascript" src="./styles/js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="./styles/js/bootstrap.min.js"></script>
+  <head>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  ga('create', 'UA-101962299-1', 'auto');
-  ga('send', 'pageview');
+    <title>Sidewinder</title>
 
-</script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<script language="JavaScript" type="text/javascript">
-  $(document).ready(function(){
-    $('.carousel').carousel({
-      interval: 5000
-    })
-  });
-</script>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-</head>
-<body>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="styles/css/page.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./styles/imgs/logo.png">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-101962299-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sidewinder</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="http://sidewinder.srotya.com"> <img alt="logo"
-          src="./styles/imgs/logo.png" style="width: 20px; float: left">
-          <p style="float: left; margin-top: 2px;">&nbsp;Sidewinder</p>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li class=""><a href=".">Overview</a></li>
-          <li class=""><a href="./download/">Download</a></li>
-          <li class=""><a href="./docs/">Docs</a></li>
-          <li class=""><a href="./integrations/">Integrations</a></li>
-          <li class=""><a href="./license/">License</a></li>
-          <li class=""><a href="./blog/">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container"
-		style="padding-top: 60px; margin: 0 auto; width: 80%" role="main">
-    <div id="my_carousel" class="carousel slide">
-
-      <ol class="carousel-indicators">
-        <li data-target = "#my_carousel" data-slide-to = "0" class="active"></li>
-        <li data-target = "#my_carousel" data-slide-to = "1"></li>
-        <li data-target = "#my_carousel" data-slide-to = "2"></li>
-      </ol>
-
-      <div class="carousel-inner i">
-
-        <div class="item active">
-          <img src="./content/slide1.png" alt = "i1" class="img-responsive">
-        </div>
-
-      </div>
-
-      <a class="carousel-control left" href="#my_carousel" data-slide = "prev">
-        <span class="icon-prev left"></span>
-      </a>
-
-      <a class="carousel-control right" href="#my_carousel" data-slide = "next">
-        <span class="icon-next right"></span>
-      </a>
-    </div>
-
-    <div style="padding-top:10px">
-      <center>
-        <button class="btn" onclick="window.location.href='./docs/gettingstarted/'">Getting Started</button>
-        <button class="btn" onclick="window.location.href='./download/'">Download</button>
-      </center>
-      <hr/>
-      <h3>Features</h3>
-      <div class="row" style="text-align:center;">
-        <div class="col-sm-4 padfeature">
-          <h4>Persistent</h4>
-          <img src="./styles/imgs/glyphicons-528-database.png" /><br/>
-          Memory mapped writes to disk<br/><br/><br/>
-        </div>
-        <div class="col-sm-4 padfeature">
-          <h4>Fast</h4>
-          <img src="./styles/imgs/glyphicons-422-send.png" /><br/>
-          Upto ~2 million writes per second per node<br/><br/><br/>
-        </div>
-        <div class="col-sm-4 padfeature">
-          <h4>Tools</h4>
-          <img src="./styles/imgs/glyphicons-42-charts.png" /><br/>
-          Official Grafana Data Source for visualizing<br/><br/><br/>
-        </div>
-        <div class="col-sm-4 padfeature">
-          <h4>Collectors</h4>
-          <img src="./styles/imgs/glyphicons-772-satellite-dish.png" /><br/>
-          Support for Collectd, Telegraf etc.<br/><br/><br/>
-        </div>
-        <div class="col-sm-4 padfeature">
-          <h4>REST</h4>
-          <img src="./styles/imgs/glyphicons-464-server.png" /><br/>
-          REST Api for programmatics data access<br/><br/><br/>
-        </div>
-        <div class="col-sm-4 padfeature">
-          <h4>Clustering</h4>
-          <img src="./styles/imgs/glyphicons-309-share-alt.png" /><br/>
-          Clustering for scaling and fault tolerance<br/><br/><br/>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#license">License</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./docs" target="_blank">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./blog" target="_blank">Blog</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <hr/>
-      <h3>News</h3>
-      <div class="row">
-        <div class="col-sm-4">
-          <h4>Release 0.0.33</h4>
-          Compaction fixes
-          <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.33">more...</a>
-        </div>
-        <div class="col-sm-4">
-          <h4>Release 0.0.31</h4>
-          New functions and improvements
-          <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.31">more...</a>
-        </div>
-        <div class="col-sm-4">
-          <h4>Release 0.0.29</h4>
-          GC, Compaction and Replication
-          <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.29">more...</a>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase" style="color:white">
+              <strong>Open Source</strong><br/>
+              <strong style="background-color:black">Timeseries Analytics</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">A Fast and Scalable Timeseries Database</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          </div>
         </div>
       </div>
-    </div>
-    <br/><br/><br/><br/>
-      <center>
-        <div style="font-size:8pt; color:#d4d7db">
-          Copyright 2016-2017 Ambud Sharma
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Sidewinder Timeseries Database</h2>
+            <hr class="my-4">
+            <p class="mb-5">Sidewinder is a fully open source Time Series Database available under Apache 2.0 License. It's designed from the ground up with performance, efficiency and scalability in mind.
+              <br/><br/>
+              Our goal is to reduce the cost of storing and analyzing time series data at large scale so valuable business insights can be generated in real-time.
+            </p>
+            <p>Checkout Sidewinder on <a href="https://github.com/srotya/sidewinder" target="_blank">Github</a></p>
+          </div>
         </div>
-        <div style="font-size:6pt; color:#d4d7db">
-          Grafana Logo Copyright 2014-2016 Torkel Ödegaard, Raintank Inc.<br/>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Features</h2>
+            <hr class="my-4">
+          </div>
         </div>
-      </center>
-  </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-database text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Persistent</h3>
+              <p class="text-muted mb-0">Memory mapped writes to disk</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Fast</h3>
+              <p class="text-muted mb-0">Upto ~2 million writes per second per node!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-bar-chart text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Visualizations</h3>
+              <p class="text-muted mb-0">Official Grafana Data Source for visual analytics</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-share text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Collectors</h3>
+              <p class="text-muted mb-0">Support for Collectd, Telegraf etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Download</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Release 0.2.0</h4>
+            Tag Key Value Support
+            <a href="https://github.com/srotya/sidewinder/releases/tag/0.2.0">more...</a>
+          </div>
+          <div class="col-sm-4">
+            <h4>Release 0.0.33</h4>
+            Bug fixes for compaction
+            <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.33">more...</a>
+          </div>
+          <div class="col-sm-4">
+            <h4>Release 0.0.31</h4>
+            Functions and index perf
+            <a href="https://github.com/srotya/sidewinder/releases/tag/sidewinder-parent-0.0.29">more...</a>
+          </div>
+        </div>
+      </div>
+      <br/><br/>
+      <br/><br/>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h4 class="section-heading">Available Platforms</h4>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img class="icos" src="./styles/imgs/Centos-logo-light.svg"/>
+              <h3 class="mb-3">RPM</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img class="icos" src="./styles/imgs/Debian-OpenLogo.svg"/>
+              <h3 class="mb-3">DEB</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img class="icos" src="./styles/imgs/Docker_(container_engine)_logo.svg"/>
+              <h3 class="mb-3">DOCKER</h3>
+            </div>
+          </div>
+          <div class="col-lg-12 text-center" style="font-size: 8pt">Note: Sidewinder binaries can also run on Windows with appropriate configuration.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="license">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">License</h2>
+            <hr class="my-4">
+            <p class="mb-5">Sidewinder is available under Apache 2.0
+              <br/><br/>
+              Please click here for the complete list of licenses.
+            </p>
+
+        </div>
+      </div>
+    </section>
 
 
-</body>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
 </html>
