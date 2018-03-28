@@ -130,7 +130,7 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: white;
+    color: black;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #EFBF2E;
@@ -140,7 +140,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: white;
+    color: black;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
