@@ -1,5 +1,3 @@
-<!-- docs/_sidebar.md -->
-
 - [Home](/)
 - [Basics](/basics/)
   - [Usage](/basics/usage.md)
